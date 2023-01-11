@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body class="body" justify-content-center>
+  <header class="hero">
+    <h1 class="app-title" > Weather Dashboard</h1>
+  </header>
+
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+
+      <div class="card">
+        <form id="user-form" class="card-body">
+          <label class="form-label" for="username">Search for a City:</label>
+          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn bg-primary rounded search-button">Search</button>
+        </form>
+      </div>
+
+      <div id="search-history-container" class="row m-0 search-history-container"> s</div>
+
+
+      </div>
+    </div>
+    <!-- This is my colum 2 on the right below -->
+
+    <div class="col-12 col-md-8">
+      <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
+      <div id="repos-container" class="list-group"></div>
+    </div>
+  </main>
+
+  
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
