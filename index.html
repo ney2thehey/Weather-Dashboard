@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- standard bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- style sheet for save icon -->
+    <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather proj</title>
+</head>
+
+<body class="body">
+        <header class="header">
+            <div class="h1-container d-flex translate-middle bg-dark justify-content-center">
+                <h1 class="h1 text-light">Weather Dashboard</h1>
+            </div>
+        </header>
+
+    <main class="main">
+        <div class="container-fluid">
+            <div class="row page-content">
+                <!-- column 1 -->
+                <div class="col-sm-4 bg-light p-0">
+                    <!-- search form -->
+                    <div class="form-container">
+                        <form id="search-form">
+                            <div class="row m-0">
+                                <label for="search-input" class="search-label m-0 text-dark">Search for a City:</label>
+                            </div>
+                            <!-- Label above search bar -->
+                            <div class="row m-0">
+                                <div class="col-sm-8 p-0 my-auto">
+                                    <input type="text" id="search-input" name="search-input" class="search-input rounded">
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <button type="submit" class="btn bg-primary rounded" id="search-button">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- City seach button-->
+                        </form>
+                    </div>
+
+                    <!-- Second seach bar below here  -->
+
+
+
+
+
+                    <!-- search history -->
+
+                </div>
+
+
+                <!-- weather container on top right  -->
+                <div class="col-sm-8 p-0">
+                    <div id="current-weather-container" class="row d-block">
+                        <!-- current weather title -->
+                        <div class="current-title-container">
+                            <h2 id="current-title" class="current-title d-inline"> Todays weather </h2>
+                            <img id="current-weather-icon" class="d-inline" src="" alt="">
+                        </div>
+                        <!-- current weather temperature -->
+                        <p class="current-temperature" id="current-temperature"> Weather:</p>
+                        <!-- current weather humidity -->
+                        <p class="current-humidity" id="current-humidity">Humidity:</p>
+                        <!-- current weather wind speed -->
+                        <p class="current-wind-speed" id="current-wind-speed">Wind-speed:</p>
+                        <!-- current weather uv index -->
+                        <p class="current-uv-index" id="current-uv-index">UV index?:</p>
+                        <p class="current-number rounded" id="current-number"></p>
+                    </div>
+                </div>
+            
+        
+
+        <!-- here are the forcast cards below -->
+                    <!-- column 2 -->
+                    <div class="col-sm-8 p-0">
+                        <!-- current weather conditions -->
+                        <div id="current-weather-container" class="row d-block">
+                            <!-- current weather title -->
+                            <div class="current-title-container">
+                                <h2 id="current-title" class="current-title d-inline"></h2>
+                                <img id="current-weather-icon" class="d-inline" src="" alt="">
+                            </div>
+                            <!-- current weather temperature -->
+                            <p class="current-temperature" id="current-temperature"></p>
+                            <!-- current weather humidity -->
+                            <p class="current-humidity" id="current-humidity"></p>
+                            <!-- current weather wind speed -->
+                            <p class="current-wind-speed" id="current-wind-speed"></p>
+                            <!-- current weather uv index -->
+                            <p class="current-uv-index" id="current-uv-index"></p>
+                            <p class="current-number rounded" id="current-number"></p>
+                        </div>
+                        <!-- 5 day forecast -->
+                        <div class="row future-forecast-container d-block">
+                            <!-- 5 day forecast title-->
+                            <h2 class="future-forecast-title" id="future-forecast-title"> Future forecast</h2>
+                            <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
+                                <!-- future day forecard card -->
+                                <div class="future-card bg-primary rounded">
+                                    <p class="future-date" id="future-date-1">date1</p>
+                                    <img id="future-icon-1" src="" alt="">
+                                    <p class="future-temp" id="future-temp-1">temp1</p>
+                                    <p class="future-humidity" id="future-humidity-1">hum1</p>
+                                    <p class="#future-wind-speed" id="#future-wind-speed-1">hum1</p>
+                                </div>
+                                <div class="future-card bg-primary rounded">
+                                    <p class="future-date" id="future-date-2">test </p>
+                                    <img id="future-icon-2" src="" alt="">
+                                    <p class="future-temp" id="future-temp-2">test </p>
+                                    <p class="future-humidity" id="future-humidity-2">test </p>
+                                    <p class="#future-wind-speed" id="#future-wind-speed-2">hum1</p>
+                                </div>
+                                <div class="future-card bg-primary rounded">
+                                    <p class="future-date" id="future-date-3">test </p>
+                                    <img id="future-icon-3" src="" alt="">
+                                    <p class="future-temp" id="future-temp-3">test </p>
+                                    <p class="future-humidity" id="future-humidity-3">test </p>
+                                    <p class="#future-wind-speed" id="#future-wind-speed-3">hum1</p>
+                                </div>
+                                <div class="future-card bg-primary rounded">
+                                    <p class="future-date" id="future-date-4">test </p>
+                                    <img id="future-icon-4" src="" alt="">
+                                    <p class="future-temp" id="future-temp-4">test </p>
+                                    <p class="future-humidity" id="future-humidity-4">test</p>
+                                    <p class="#future-wind-speed" id="#future-wind-speed-4">hum1</p>
+                                </div>
+                                <div class="future-card bg-primary rounded">
+                                    <p class="future-date" id="future-date-5">test </p>
+                                    <img id="future-icon-5" src="" alt="">
+                                    <p class="future-temp" id="future-temp-5">test</p>
+                                    <p class="future-humidity" id="future-humidity-5">test</p>
+                                    <p class="#future-wind-speed" id="#future-wind-speed-5">hum1</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+             </div>
+            </div>
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
